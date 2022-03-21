@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="https://www.google.com/search" method="get">
+      <div>
+        <label for="nome">Nome</label><br /><input
+          type="text"
+          id="nome"
+          placeholder="Seu nome"
+          required
+        />
+      </div>
+      <div>
+        <label for="sobrenome">Sobrenome</label><br /><input
+          type="text"
+          id="sobrenome"
+          placeholder="Seu sobrenome"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email</label><br /><input
+          type="email"
+          id="email"
+          placeholder="Seu email"
+          required
+        />
+      </div>
+      <details>
+        <summary>Pergunta adicional</summary>
+        <label for="semestre">Qual o seu semestre?</label>
+        <br />
+        <input
+          type="text"
+          name=""
+          id="semestre"
+          list="semestres"
+          placeholder="Seu semestre"
+        />
+        <datalist id="semestres">
+          <option value="Primeiro Semestre"></option>
+          <option value="Segundo Semestre"></option>
+          <option value="Terceiro Semestre"></option>
+          <option value="Quarto Semestre"></option>
+          <option value="Quinto Semestre"></option>
+          <option value="Sexto Semestre"></option>
+          <option value="Sétimo Semestre"></option>
+          <option value="Oitavo Semestre"></option>
+        </datalist>
+      </details>
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
